@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK creations</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header><h1 id="title">AK Creations - Survery Form</h1></header>
+    <div>
+        <p id="description">Thank you for taking the time to help us</p>
+
+        <form id="survey-form">
+
+            <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" required></label>
+
+            <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"></label>
+
+            <label id="number-label" for="number">Age <input id="number" type="number" placeholder="Age" min="1" max="120" step="1"></label>
+
+            <p>How did you hear about us?</p>
+            <select id="dropdown" required>
+                <option value="">(Select one)</option>
+                <option value="1">Instagram</option>
+                <option value="2">Facebook</option>
+                <option value="3">Tik-Tok</option>
+                <option value="4">A friend</option>
+            </select>    
+
+            <p id="recommend-description">Would you recommend AK creations to a friend?</p>
+
+            <label for="definitely">Definitely<input id="definitely" name="recommend" value="definitely" type="radio"></label>
+            <label for="maybe">Maybe<input id="maybe" name="recommend" type="radio" value="maybe" ></label>
+            <label for="not">Not sure<input id="not" name="recommend" type="radio" value="not"></label>
+
+            <p id="interest">women’s accessories of your interest</p>
+            <label for="earrings"><input id="earrings" name="prefer" type="checkbox" value="earrings">Earrings</label>
+            <label for="bracelets"><input id="bracelets" name="prefer" type="checkbox" value="bracelets">Bracelets</label>
+            <label for="rings"><input id="rings" name="prefer" type="checkbox" value="rings">Rings</label>
+            <label for="headbands"><input id="headbands" name="prefer" type="checkbox" value="headbands">Headbands</label>
+
+            <p>Any comments or suggestions?</p>
+
+            <textarea 
+                id="comments"        name="comments"
+                rows="3" 
+                cols="30" 
+                placeholder="Enter your comment here..." >
+            </textarea>
+
+            <button id="submit" type="submit">Submit</button>
+        </form>
+   </div>
+</body>
+</html>
